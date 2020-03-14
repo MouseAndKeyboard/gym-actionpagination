@@ -54,11 +54,13 @@ class PagesdBanditEnv(gym.Env):
             reward = 0
             done = True
 
-            if np.random.uniform() < self.p_dist[action]:
-                if not isinstance(self.r_dist[action], list):
-                    reward = self.r_dist[action]
+            arm_to_pull = self.pages[self.current_page][action]
+
+            if np.random.uniform() < self.p_dist[arm_to_pull]:
+                if not isinstance(self.r_dist[arm_to_pull], list):
+                    reward = self.r_dist[arm_to_pull]
                 else:
-                    reward = np.random.normal(self.r_dist[action][0], self.r_dist[action][1])
+                    reward = np.random.normal(self.r_dist[arm_to_pull][0], self.r_dist[arm_to_pull][1])
 
             return self.current_page, reward, done, {'page_no': self.page_no}
 
