@@ -4,6 +4,11 @@ Investigating whether representing actions in the environment using a pagination
 # References
 > J. Cooper, gym-bandits, (2019), GitHub repository, https://github.com/JKCooper2/gym-bandits
 
+# Usage
+```python
+import gym
+env = gym.make('gym_pagination:pagination-v0', p_dist=[0, 0, 0, 0, 0, 1, 0, 0, 0, 0], r_dist=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+```
 
 # How it works
 
