@@ -31,9 +31,9 @@ class PaginationEnv(gym.Env):
 
     self._seed()
 
-    def _seed(self, seed=None):
-        self.np_random, seed = seeding.np_random(seed)
-        return [seed]
+  def _seed(self, seed=None):
+    self.np_random, seed = seeding.np_random(seed)
+    return [seed]
 
   def step(self, action):
     assert self.action_space.contains(action)
