@@ -3,7 +3,7 @@ import gym
 from gym import spaces
 from gym.utils import seeding
 
-class PagedBanditEnv(gym.Env):
+class PagerEnv(gym.Env):
     """
     Bandit environment base to allow agents to interact with the class n-armed bandit
     in different variations
