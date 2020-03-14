@@ -1,6 +1,10 @@
 # gym-actionpagination
 Investigating whether representing actions in the environment using a pagination setup actually can work.
 
+# References
+> J. Cooper, gym-bandits, (2019), GitHub repository, https://github.com/JKCooper2/gym-bandits
+
+
 # How it works
 
 1. Normal 10-armed bandit 
