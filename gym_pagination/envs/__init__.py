@@ -1,0 +1,1 @@
+from gym_pagination.envs.pagination_env import PaginationEnv
